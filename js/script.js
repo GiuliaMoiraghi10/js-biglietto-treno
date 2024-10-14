@@ -21,11 +21,18 @@ console.log(test)
 //      - ALTRIMENTI SE il passeggero è > 65 anni
 //          -> sconto del 40%
 //      - ALTRIMENTI nessuno sconto
-    if (userAge < 18){
-        console.log(priceTicket * 20 / 100)
+
+    let sale20 = priceTicket * 20 / 100
+    let sale40 = priceTicket * 40 / 100
+    if (userAge <18){
+        console.log(priceTicket - sale20)
     } else if (userAge > 65){
-        console.log(priceTicket * 40 / 100)
-    } else (priceTicket)
+        console.log(priceTicket - sale40)
+    } else {priceTicket}
 
 
-// (4.L’output del prezzo finale va messo fuori in forma umana) 
+
+
+    
+// (4.L’output del prezzo finale va messo fuori in forma umana)
+    
