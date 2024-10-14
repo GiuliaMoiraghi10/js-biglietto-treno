@@ -9,7 +9,9 @@ console.log(test)
     console.log (userAge)
 // 3.Calcolare prezzo totale del viaggio
 //  - il prezzo del biglietto è definito in base ai km (0.21 € al km)
-//      
+//     - calcolare costo del biglietto in base ai km che farà l'utente
+    const priceTicket = (userKm *0.21)
+    console.log (priceTicket)
 //  - va applicato uno sconto del 20% per i minorenni
 //  - va applicato uno sconto del 40% per gli over 65
 // (4.L’output del prezzo finale va messo fuori in forma umana) 
