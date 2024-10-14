@@ -12,7 +12,7 @@ console.log(test)
 // 3.Calcolare prezzo totale del viaggio
 //  - il prezzo del biglietto è definito in base ai km (0.21 € al km)
 //     - calcolare costo del biglietto in base ai km che farà l'utente
-    const priceTicket = (userKm *0.21) //number
+    const priceTicket = (userKm *0.21).toFixed(1) //number
     console.log (priceTicket)
 //  - va applicato uno sconto del 20% per i minorenni
 //      - SE il passeggero è < 18 anni
@@ -30,9 +30,9 @@ console.log(test)
         console.log(priceTicket - sale40)
     } else {priceTicket}
 
-
-
+// (4.L’output del prezzo finale va messo fuori in forma umana)
+    
 
     
-// (4.L’output del prezzo finale va messo fuori in forma umana)
+
     
