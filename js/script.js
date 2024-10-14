@@ -31,7 +31,14 @@ console.log(test)
     } else {priceTicket}
 
 // (4.L’output del prezzo finale va messo fuori in forma umana)
-    
+    const totalPrice20 = priceTicket - sale20
+    const totalPrice40 = priceTicket - sale40
+    const totalPrice = priceTicket
+
+    document.getElementById("output").innerHTML = totalPrice20;
+    document.getElementById("output").innerHTML = totalPrice40;
+    document.getElementById("output").innerHTML = totalPrice;
+
 
     
 
