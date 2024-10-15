@@ -12,7 +12,7 @@ console.log(test)
 // 3.Calcolare prezzo totale del viaggio
 //  - il prezzo del biglietto è definito in base ai km (0.21 € al km)
 //     - calcolare costo del biglietto in base ai km che farà l'utente
-    const priceTicket = (userKm *0.21).toFixed(1) //number
+    const priceTicket = parseInt ((userKm *0.21).toFixed(1)) //number
     console.log (priceTicket)
 //  - va applicato uno sconto del 20% per i minorenni
 //      - SE il passeggero è < 18 anni
@@ -22,24 +22,31 @@ console.log(test)
 //          -> sconto del 40%
 //      - ALTRIMENTI nessuno sconto
 
-    let sale20 = priceTicket * 20 / 100
-    let sale40 = priceTicket * 40 / 100
-    if (userAge <18){
-        console.log(priceTicket - sale20)
-    } else if (userAge > 65){
-        console.log(priceTicket - sale40)
-    } else {priceTicket}
+    // let sale20 = priceTicket * 20 / 100
+    // let sale40 = priceTicket * 40 / 100
+    // if (userAge <18){
+    //     console.log(priceTicket - sale20)
+    // } else if (userAge > 65){
+    //     console.log(priceTicket - sale40)
+    // } else {priceTicket}
+
+    let sale = 0
+    if (userAge<18){
+        sale=priceTicket * 20 / 100
+        console.log (priceTicket * 20 / 100)
+    } else if (userAge>65){
+        sale=priceTicket * 40 / 100
+        console.log(priceTicket * 40 / 100)
+    }
 
 // (4.L’output del prezzo finale va messo fuori in forma umana)
-    const totalPrice20 = priceTicket - sale20
-    const totalPrice40 = priceTicket - sale40
-    const totalPrice = priceTicket
+    const totalPrice = priceTicket - sale
 
-    document.getElementById("output").innerHTML = totalPrice20;
-    document.getElementById("output").innerHTML = totalPrice40;
     document.getElementById("output").innerHTML = totalPrice;
 
 
+    
+    
     
 
     
